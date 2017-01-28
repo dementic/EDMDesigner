@@ -5,7 +5,7 @@
   "editor.fontSize": 14,
 
   // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
-  "files.autoSave": "off",
+  "files.autoSave": "onWindowChange",
 
   // Controls the font family.
   "editor.fontFamily": "Consolas, 'Courier New', monospace",
