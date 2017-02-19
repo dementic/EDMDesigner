@@ -1,20 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1024, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael Herscovici">
 
     <title>Create High Converting Landing Pages For Free!</title>
     <meta name="description" content="Create your own killer squeeze pages in a few clicks without any techie skills " />
     <meta name="keywords" content="squeeze page, squeeze page creator, free squeeze page creator, free squeeze page templates, squeeze page" />
 
-    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-drawer/1.0.6/css/bootstrap-drawer.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.8/dragula.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" />
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link rel="stylesheet" href="css/fontawesome-4.7.0.min.css" />
+    <link rel="stylesheet" href="css/dragula-3.6.8.min.css" />
+    <link rel="stylesheet" href="css/summernote-0.8.2.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,15 +27,260 @@
     <![endif]-->
 
 </head>
-<body edge-app="">
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-drawer/1.0.6/js/drawer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.8/dragula.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.11.0/fetch.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.min.js"></script>
+<body>
+    <div class="container">
+        <!-- Fixed navbar -->
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img src="images/logo.png" width="210" alt="Website Logo" />
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Browse Templates</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </nav>
+        <div class="has-drawer">
 
-    <script src="/app/init.js"></script>
+            <!-- Drawer -->
+            <div id="drawer" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold drawer-right">
+                <div class="drawer-controls" id="drawer-mode-selector">
+                    <a href="#drawer" data-toggle="drawer" class="btn btn-circle btn-primary" title="Edit mode">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                    <a href="#" id="preview-button" class="btn btn-circle btn-info" title="Preview">
+                        <i class="fa fa-eye"></i>
+                    </a>
+                </div>
+                <div class="drawer-contents">
+                    <div class="drawer-heading">
+                        <!-- TEMPLATE NAME -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="tTitle">Template name</label>
+                                    <input id="tTitle" class="form-control" placeholder="Untitled">
+                                </div>
+                            </div>
+                            <!-- /.col-lg-12 -->
+                        </div>
+                    </div>
+                    <div class="drawer-body">
+                        <div class="alert alert-info" role="alert">
+                            <i class="fa fa-exclamation-circle"></i>Drag an element to the position you would like to appear.
+                        </div>
+                        <!-- SECTIONS -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="sections">
+                                    <a href="#" class="thumbnail" data-template="textImage">
+                                        <img src="images/sections/textImage.jpg" alt="Header, Text and Image" class="drag-handle" />
+                                    </a>
+                                    <a href="#" class="thumbnail" data-template="textTwoProduct">
+                                        <img src="images/sections/textTwoProduct.jpg" alt="Text and two products" class="drag-handle" />
+                                    </a>
+                                    <a href="#" class="thumbnail" data-template="productColumns">
+                                        <img src="images/sections/productColumns.jpg" alt="3 product columns" class="drag-handle" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drawer-nav">
+                    </div>
+                    <div class="drawer-footer"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div id="content">
+            <div class="row">
+                <div class="drag-title-bar">
+                    <i class="fa fa-bars pull-left drag-handle"></i>
+
+                    <a href="#"><i class="fa fa-trash pull-right"></i></a>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <h2>A <span style="color: #57c5d9">Superb App</span> for you!
+                    </h2>
+
+                    <p>We’ve spent over 3 years to create the most flexible drag and drop responsive email editor on the planet!</p>
+                    <ul>
+                        <li>
+                            <strong>Drag-and-drop interface</strong>
+                        </li>
+                        <li>Bulletproof responsive email code</li>
+                        <li>Create once, reuse forever</li>
+                        <li>Responsive email editor for everyone!</li>
+                        <li>Over 50+ Ready to use Templates!</li>
+                    </ul>
+                    <hr />
+                    <p>
+                        <b>LIMITED TIME OFFER!</b><br />
+                        Get two free templates on registration!
+                    </p>
+                    <a href="http://edmdesigner.com/responsive-email-editor-for-end-users" class="btn btn-block btn-primary">Register NOW!</a>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive pull-right" src="images/robot.jpg" width="380" alt="robot">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="drag-title-bar">
+                    <i class="fa fa-bars pull-left drag-handle"></i>
+
+                    <a href="#"><i class="fa fa-trash pull-right"></i></a>
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="thumbContainer">
+                            <img src="images/illustration-v1-ecms.png" alt="">
+                        </div>
+                        <div class="caption">
+                            <h4 class="pull-right">$24.99</h4>
+                            <h4>
+                                <a href="#">eCMS</a>
+                            </h4>
+                            <p>
+                                Two free templates <a target="_blank" href="http://edmdesigner.com">EDMDesigner</a>.
+                            </p>
+                            <a href="http://edmdesigner.com/email-content-management-system" class="btn btn-block btn-primary">Learn more...</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="thumbContainer">
+                            <img src="images/illustration-v1-api.png" alt="">
+                        </div>
+                        <div class="caption">
+                            <h4 class="pull-right">$24.99</h4>
+                            <h4>
+                                <a href="#">Email Editor API</a>
+                            </h4>
+                            <p>
+                                Free 30 day API trial <a target="_blank" href="http://edmdesigner.com/drag-and-drop-responsive-email-editor-api">EDMDesigner</a>.
+                            </p>
+                            <a href="http://edmdesigner.com/drag-and-drop-responsive-email-editor-api" class="btn btn-block btn-primary">Start NOW!</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="thumbContainer">
+                            <img src="images/illustration-v1-app.png" alt="">
+                        </div>
+                        <div class="caption">
+                            <h4 class="pull-right">$24.99</h4>
+                            <h4><a href="#">Email Editor APP</a></h4>
+                            <p>
+                                Two free templates <a target="_blank" href="http://edmdesigner.com">EDMDesigner</a>
+                            </p>
+                            <a href="http://edmdesigner.com/responsive-email-editor-for-end-users" class="btn btn-block btn-primary">Register NOW!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="drag-title-bar">
+                    <i class="fa fa-bars pull-left drag-handle"></i>
+
+                    <a href="#"><i class="fa fa-trash pull-right"></i></a>
+                    
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <h4>
+                        <a href="#">Like this?</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan pharetra mattis. Nunc condimentum
+                id purus in lobortis.
+                    </p>
+                    <a class="btn btn-primary" target="_blank" href="http://sprott.physics.wisc.edu/pickover/pc/redbut.html">Don't click the button</a>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <div class="thumbContainer">
+                            <img src="http://placehold.it/320x150" alt="">
+                        </div>
+                        <div class="caption">
+                            <h4 class="pull-right">$24.99</h4>
+                            <h4>
+                                <a href="#">First Product</a>
+                            </h4>
+                            <p>Product description</p>
+                        </div>
+                        <a>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <div class="thumbContainer">
+                            <img src="http://placehold.it/320x150" alt="">
+                        </div>
+                        <div class="caption">
+                            <h4 class="pull-right">$24.99</h4>
+                            <h4>
+                                <a href="#">Second Product</a>
+                            </h4>
+                            <p>Product Description</p>
+                        </div>
+                        <a>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- UI Only dependencies -->
+    <script src="lib/jquery-2.2.0.min.js"></script>
+    <script src="lib/bootstrap-3.3.7.min.js"></script>
+    <script src="lib/bootstrap-drawer-1.0.6.min.js"></script>
+
+    <!-- Required polyfills for JQuery/Bootstrap free version -->
+    <script src="lib/fetch-0.11.0.min.js"></script>
+    <script src="lib/element-closest.js"></script>
+
+    <!-- Required Libraries -->
+    <script src="lib/dragula-3.6.8.min.js"></script>
+    <script src="lib/summernote-0.8.2.min.js"></script>
+
+    <!-- Application -->
+    <script src="app/edge.js"></script>
+    <script src="app/drawer.js"></script>
+    <script src="app/dragula.js"></script>
+    <script src="app/content.js"></script>
 </body>
+
 </html>
